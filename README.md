@@ -2,7 +2,7 @@
 
 **Lab Goal**
 
-The goal of this lab is to ingest DNS activity into Splunk Enterprise and analyze domain name resolution activity to identify legitimate services, external communications, suspicious domains, and potential indicators of compromise through dashboards, reports, alerts, detections, and threat-hunting queries.\
+The goal of this lab is to ingest DNS activity into Splunk Enterprise and analyze domain name resolution activity to identify legitimate services, external communications, suspicious domains, and potential indicators of compromise through dashboards, reports, alerts, detections, and threat-hunting queries.
 
 **Dataset:** dns_traffic.log
 Index: dns
@@ -114,7 +114,7 @@ Search: index=dns\
 \
 Alert Name: DNS Activity Detection
 
-Description: Generates notifications when DNS activity is observed.\
+Description: Generates notifications when DNS activity is observed.
 
 Please refer to images # 13 in the repository.
 
