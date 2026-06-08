@@ -140,7 +140,7 @@ Investigation of maliciousdomain.com identified 7 DNS queries originating from m
 | Last Seen         | 2026-06-03 08:49:00 |
 | Affected Systems  | Multiple source IPs |
 
-### \
+### 
 Assessment
 
 The most notable characteristic is: Multiple source IPs queried the same suspicious domain.
