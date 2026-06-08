@@ -3,9 +3,9 @@
 **Lab Goal**
 
 The goal of this lab is to ingest DNS activity into Splunk Enterprise and analyze domain name resolution activity to identify legitimate services, external communications, suspicious domains, and potential indicators of compromise through dashboards, reports, alerts, detections, and threat-hunting queries.\
-**\
-Dataset:** dns_traffic.log**\
-Index:** dns
+
+**Dataset:** dns_traffic.log
+Index: dns
 
 **Create DNS Index**
 
@@ -22,17 +22,18 @@ Host: MacBookPro\
 Sourcetype: dns_traffic
 
 Description:DNS traffic data was ingested into Splunk Enterprise to support domain resolution monitoring and DNS-based threat detection.\
-\
 
-\
-Verify Ingestion and Activity**
+Please refer to images # 1 and 2 in the repository.
+
+**Verify Ingestion and Activity**
 
 Search: index=dns\
 Purpose: Verify successful DNS data ingestion and Review DNS requests and responses contained within the dataset.\
-\
 
-\
-Verify Event Count**
+Please refer to images # 3 and 4 in the repository.
+
+
+**Verify Event Count**
 
 Search:\
 index=dns\
@@ -40,6 +41,7 @@ index=dns\
 \
 Purpose: Confirm DNS dataset availability.
 
+Please refer to images # 5 in the repository.
 
 **Identify Queried Domains**
 
@@ -50,6 +52,7 @@ index=dns\
 
 Purpose: Identify domains requested by the endpoint.
 
+Please refer to images # 6 in the repository.
 
 **Search for Google DNS Activity**
 
@@ -57,6 +60,7 @@ Search: index=dns google
 
 Purpose: Identify communications involving Google-related domains.
 
+Please refer to images # 7 in the repository.
 
 **Search for Microsoft DNS Activity**
 
@@ -64,13 +68,15 @@ Search: index=dns microsoft
 
 Purpose: Identify communications involving Microsoft-related domains.
 
-\
-Search for Github DNS Activity**
+Please refer to images # 8 in the repository.
+
+**Search for Github DNS Activity**
 
 Search: index=dns github
 
 Purpose: Identify communications involving Github-related domains.\
-\
+
+Please refer to images # 9 in the repository.
 
 **Visualization**
 
@@ -80,8 +86,9 @@ index=dns\
 
 Visualization: Single Value\
 Panel Title: DNS Event Count\
-Description: Displays the total number of DNS events ingested into the DNS index.\
-\
+Description: Displays the total number of DNS events ingested into the DNS index.
+
+Please refer to images # 10 in the repository.
 
 **Report**
 
@@ -89,7 +96,9 @@ Report Name: DNS Activity Report
 
 Description: Summarizes DNS activity identified within the dataset.
 
-Step 12 — Dashboard**
+Please refer to images # 11 in the repository.
+
+ **Dashboard**
 
 Dashboard Name: DNS SOC Monitoring Dashboard
 
@@ -97,9 +106,8 @@ Panel: DNS Activity Overview\
 \
 Description: Provides visibility into DNS resolution activity and queried domains.
 
-\
-\
-\
+Please refer to images # 12 in the repository.
+
 **Step 13 — Alert**
 
 Search: index=dns\
@@ -107,7 +115,8 @@ Search: index=dns\
 Alert Name: DNS Activity Detection
 
 Description: Generates notifications when DNS activity is observed.\
-\
+
+Please refer to images # 13 in the repository.
 
 **Threat Hunting**
 
@@ -144,8 +153,4 @@ because repeated activity across several systems may suggest broader exposure or
 
 So In this lab, Threat-hunting analysis identified 7 DNS requests for maliciousdomain.com originating from 5 unique source IP addresses. The repeated queries across multiple systems made the domain a high-priority investigation candidate and demonstrated how DNS monitoring can be used to identify potentially malicious communications within a SOC environment.
 
-Top of Form
-
-Bottom of Form
-
-Bottom of Form
+Please refer to images # 14 in the repository.
